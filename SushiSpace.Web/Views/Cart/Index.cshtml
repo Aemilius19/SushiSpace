@@ -1,0 +1,169 @@
+﻿@using SushiSpace.Web.Models.ViewModels
+
+@model CartViewModel
+
+@if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<h2>Shopping Cart</h2>
+
+@if (Model.CartProducts.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CartProducts)
+            {
+                <tr>
+                    <td><img src="http://localhost:5119/Images/products/@item.ImageUrl" alt="Product Image" style="max-width: 100px; max-height: 100px;" /></td>
+                    <td>@item.ProductName</td>
+                    <td class="price" id="price-@item.ProductId">@item.Price</td>
+                    <td>
+                        <div class="quantity">
+                            <input id="quantity-@item.ProductId" type="number" step="1" min="1" name="quantity" value="@item.Quantity" class="input-text qty text" size="4" data-product-id="@item.ProductId" onchange="updateTotalPrice(@item.ProductId)">
+                        </div>
+                    </td>
+                    <td class="total" id="total-@item.ProductId">@((item.Quantity * item.Price).ToString("0.00"))</td>
+                    <td>
+                        <form asp-action="RemoveFromCart" asp-controller="Cart" method="post">
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <button type="submit" class="btn btn-sm btn-danger">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div>
+        <p>Total: <span id="cartTotal">@Model.CartProducts.Sum(item => item.Quantity * item.Price).ToString("0.00")</span></p>
+    </div>
+
+    <div>
+        <form asp-action="ClearCart" asp-controller="Cart" method="post">
+            <button type="submit" class="btn btn-danger">Clear Cart</button>
+        </form>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <form method="get" action="@Url.Action("Index", "Order")" id="checkoutForm">
+            @for (int i = 0; i < Model.CartProducts.Count; i++)
+            {
+                var product = Model.CartProducts[i];
+                <input type="hidden" name="Products[@i].ProductId" value="@product.ProductId" />
+                <input type="hidden" name="Products[@i].ProductName" value="@product.ProductName" />
+                <input type="hidden" name="Products[@i].Price" value="@product.Price.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)" />
+                <input type="hidden" name="Products[@i].ImageUrl" value="@product.ImageUrl" />
+                <input type="hidden" name="Products[@i].Quantity" id="hiddenQuantity-@product.ProductId" value="@product.Quantity" />
+                <input type="hidden" name="Products[@i].CategoryId" value="@product.CategoryId" />
+            }
+            <button type="submit" class="btn btn-success" style="background-color: #5B84B1FF;">Checkout</button>
+        </form>
+    </div>
+}
+else
+{
+    <p>Your cart is empty.</p>
+}
+
+<h3>Related Products</h3>
+<div style="display: flex; flex-wrap: wrap;">
+    @{
+        var cartProductIds = Model.CartProducts.Select(cp => cp.ProductId).ToHashSet();
+        var filteredRelatedProducts = Model.RelatedProducts.Where(rp => !cartProductIds.Contains(rp.Id)).ToList();
+    }
+    @foreach (var product in filteredRelatedProducts)
+    {
+        <div class="related-product" style="margin: 10px; text-align: center;">
+            <img src="http://localhost:5119/Images/products/@product.ImgUrl" alt="Product Image" style="max-width: 100px; max-height: 100px;" />
+            <p>@product.Name</p>
+            <p>@product.Price.ToString("0.00")</p>
+            <button onclick="addToCart(@product.Id, 1)" style="background-color: #5B84B1FF; color: white; border: none; border-radius: 5px; padding: 5px 10px;">+</button>
+        </div>
+    }
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+
+    document.getElementById('checkoutForm').addEventListener('submit', function () {
+        document.querySelectorAll('.quantity input').forEach(function (input) {
+            var productId = input.dataset.productId;
+            var hiddenQuantityField = document.getElementById(`hiddenQuantity-${productId}`);
+            if (hiddenQuantityField) {
+                hiddenQuantityField.value = input.value;
+            }
+        });
+    });
+
+    // Function to update the total price for a specific product
+    function updateTotalPrice(productId) {
+        var quantity = parseInt(document.getElementById(`quantity-${productId}`).value);
+        var price = parseFloat(document.getElementById(`price-${productId}`).textContent.replace(',', '.')); // Преобразуем запятую в точку для правильного парсинга
+        var total = quantity * price;
+        document.getElementById(`total-${productId}`).textContent = total.toFixed(2).replace('.', ','); // Округляем и заменяем точку на запятую для отображения
+
+        updateCartTotal();
+    }
+
+    // Function to update the overall total of the cart
+    function updateCartTotal() {
+        var total = 0;
+        document.querySelectorAll(".total").forEach(function (element) {
+            total += parseFloat(element.textContent.replace(',', '.')); // Преобразуем запятую в точку для правильного парсинга
+        });
+        document.getElementById("cartTotal").textContent = total.toFixed(2).replace('.', ','); // Округляем и заменяем точку на запятую для отображения
+    }
+    function addToCart(productId, quantity) {
+        $.ajax({
+            url: "/Cart/AddToCart",
+            type: "POST",
+            data: { productId: productId, quantity: quantity },
+            success: function (data) {
+                // Show success message
+                Swal.fire({
+                    title: 'Product added to cart!',
+                    icon: 'success',
+                    showConfirmButton: false,
+                    timer: 1500 // Close alert after 1.5 seconds
+                });
+
+                // Optionally reload the page after a delay
+                setTimeout(function () {
+                    location.reload();
+                }, 1500);
+            },
+            error: function (err) {
+                alert("Error adding product to cart.");
+            }
+        });
+    }
+
+
+
+    // Initialize the total price on page load
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll(".quantity input").forEach(function (input) {
+            input.addEventListener('change', function () {
+                var productId = input.dataset.productId;
+                updateTotalPrice(productId);
+            });
+        });
+
+        // Initialize the overall total
+        updateCartTotal();
+    });
+</script>

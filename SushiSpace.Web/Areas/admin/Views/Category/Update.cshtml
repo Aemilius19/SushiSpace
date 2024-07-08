@@ -1,0 +1,16 @@
+﻿@using SushiSpace.Web.Models.ViewModels
+
+@model CategoryViewModel
+
+<h2>Update Category</h2>
+
+<form asp-action="Update" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Category Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>

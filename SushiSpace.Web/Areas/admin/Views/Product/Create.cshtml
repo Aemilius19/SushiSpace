@@ -1,0 +1,32 @@
+﻿@using SushiSpace.Web.Models.DTOs
+
+@model ProductDTO
+
+<h2>Create Product</h2>
+
+<form asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImgFile"></label>
+        <input asp-for="ImgFile" class="form-control" type="file" />
+        <span asp-validation-for="ImgFile" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="CategoryId" />
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<a asp-action="Index" asp-controller="Product" class="btn btn-secondary">Back to Products</a>

@@ -1,0 +1,309 @@
+﻿@using Newtonsoft.Json
+@using SushiSpace.Web.Models.ViewModels
+ @model ProductIndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!-- Slider -->
+<div class="flat-sliders-container">
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="on">
+                    <img src="http://localhost:5119/Images/brand/background.jpg" alt="slider-image" style="max-width: 100%; height: auto;" />
+
+                    <div class="tp-caption sfl title-slide style6" data-x="100" data-y="250" data-speed="1500" data-start="500" style="font-size: 48px; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"> Sushi</div>
+
+                    <div class="tp-caption sfr description-slider style1" data-x="100" data-y="350" data-speed="1000" data-start="1000" style="font-size: 24px; color: #ffffff;"> Space </div>
+
+                    <div class="tp-caption sft desc-slide blue-color center style3" data-x="40" data-y="420" data-speed="1000" data-start="1500" style="font-size: 18px; color: #ffffff; line-height: 1.5;">
+                        <span>Welcome to</span> <br>
+                        Sushi Space delivery, <br> Asian cuisine restaurant located on a <br> busy corner
+                    </div>
+                </li>
+
+
+
+                @* <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                    <img src="~/assets/images/slides/1.jpg" alt="slider-image" />
+
+
+
+
+                    <div class="tp-caption sfl title-slide style6" data-x="140" data-y="320" data-speed="1500" data-start="1500" data-easing="Sine.easeInOut"> Sumi</div>
+
+                    <div class="tp-caption sfr description-slider style1" data-x="140" data-y="450" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                        Restaurant
+
+                    </div>
+
+                    <div class="tp-caption sft desc-slide blue-color center  style3" data-x="40" data-y="250" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                        <span>Wellcome to</span> <br>
+
+                        Sumi is a restaurant, bar and <br>coffee roastery located on a <br> busy corner site in
+                    </div>
+                </li>
+                <li data-transition="random-static" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on">
+                    <img src="~/assets/images/slides/1.jpg" alt="slider-image" />
+
+                    <div class="tp-caption sfl title-slide style6" data-x="140" data-y="320" data-speed="1500" data-start="1500" data-easing="Sine.easeInOut"> Sumi</div>
+
+                    <div class="tp-caption sfr description-slider style1" data-x="140" data-y="450" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                        Restaurant
+
+                    </div>
+
+                    <div class="tp-caption sft desc-slide blue-color center  style3" data-x="40" data-y="250" data-speed="1000" data-start="1500" data-easing="Power3.easeInOut">
+                        <span>Wellcome to</span> <br>
+
+                        Sumi is a restaurant, bar and <br>coffee roastery located on a <br> busy corner site in
+                    </div>
+                </li> *@
+            </ul>
+        </div>
+
+        <div id="slider-counter">
+            <a href="#" data-id="0"><span>01</span></a>
+            
+        </div>
+    </div>
+    <div class="flat-vertical social-links">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <span>FOLLOW US</span>
+    </div>
+</div>
+
+<section class="flat-row flat-our">
+    <div class="col-md-6">
+        <div class="flat-divider d96px"></div>
+        <div class="wrap-content-story">
+            <div class="title-section style2 ">
+                <h1 class="title">Our Story</h1>
+            </div>
+            <p class="content-story">Sushi Space is a delivery restaurant specializing in sushi and various Asian cuisine dishes. We strive to bring joy and satisfaction to our customers by delivering fresh and delicious meals right to your doorstep or office.</p>
+            <ul class="iconlist">
+                <li><i class="fa fa-circle-o"></i> Sushi Space is not just a restaurant; it's a service that cares about your comfort and convenience, offering fast and quality delivery.</li>
+                <li><i class="fa fa-circle-o"></i> We use only fresh and high-quality ingredients so that you can enjoy the true flavors of Japan and Asia.</li>
+                <li><i class="fa fa-circle-o"></i> Our menu includes a variety of sushi, rolls, sashimi, and other Asian dishes to satisfy the most refined tastes.</li>
+                <li><i class="fa fa-circle-o"></i> At Sushi Space, we pride ourselves on our high level of service and strive to provide the perfect experience for every order.</li>
+            </ul>
+        </div>
+    </div><!--/.col-md-6-->
+    </div><!--/.row-->
+    </div>
+
+
+</section>
+
+
+
+
+
+<section class="flat-row flat-tab-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-section">
+                    <div class="top-section">Find About</div>
+                    <h1 class="title">Our Menu</h1>
+                </div>
+            </div><!--/.col-md-12-->
+        </div><!--/.row-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="flat-tabs">
+                    <ul class="menu-tab">
+                        @foreach (var category in Model.Categories)
+                        {
+                            <li>
+                                <a href="#category-@category.Id" data-toggle="tab" onclick="loadProducts(@category.Id)">
+                                    @category.Name
+                                </a>
+                            </li>
+                        }
+                    </ul>
+
+                    <div class="content-tab">
+                        <div class="content-inner">
+                            @foreach (var category in Model.Categories)
+                            {
+                                <div class="tab-pane" id="category-@category.Id">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul class="menu-fd" id="products-container-@category.Id">
+                                                <!-- Продукты для выбранной категории будут загружены с помощью JavaScript -->
+                                            </ul>
+                                        </div><!-- /.col-md-12 -->
+                                    </div><!-- /.row -->
+                                </div>
+                                <!-- /.tab-pane -->
+                            }
+                            
+                        </div><!-- /.content-inner -->
+                    </div><!-- /.content-tab -->
+                </div><!-- flat-tabs -->
+            </div><!--/.col-md-12-->
+        </div><!--/.row-->
+</section>
+
+<style>
+    .menu-fd {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        list-style-type: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+        .menu-fd li {
+            flex: 1 1 45% !important; /* Два элемента в строке, с небольшим зазором */
+            box-sizing: border-box !important;
+            padding: 10px !important;
+            max-width: 45% !important; /* Ограничиваем ширину до 45% */
+        }
+
+        .menu-fd .item {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            background: #f9f9f9 !important;
+            padding: 20px !important;
+            border: 1px solid #ddd !important;
+            width: 100% !important; /* Задаем ширину 100% для item */
+        }
+
+            .menu-fd .item .thumb img {
+                width: 200px !important; /* Установите нужный размер изображения */
+                object-fit: cover !important;
+            }
+
+            .menu-fd .item .text {
+                text-align: center !important;
+            }
+
+    .cart-icon {
+        width: 35px; /* Уменьшаем размер иконки корзины */
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    function loadProducts(categoryId) {
+        // Hide all product containers
+        const allProductsContainers = document.querySelectorAll('.menu-fd');
+        allProductsContainers.forEach(container => {
+            container.innerHTML = ''; // Clear product containers
+            container.style.display = 'none'; // Hide containers
+        });
+
+        // Display and load products for the current category
+        fetch(`/Home/GetProductsByCategory?categoryId=${categoryId}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const productsContainer = document.getElementById(`products-container-${categoryId}`);
+                productsContainer.innerHTML = ''; // Clear current container before adding new elements
+                productsContainer.style.display = 'flex'; // Display current category container
+
+                data.forEach(product => {
+                    const productElement = document.createElement('li');
+                    productElement.innerHTML = `
+                                <div class="item">
+                                    <a href="/Product/Index/${product.id}">
+                                        <div class="thumb">
+                                            <img src="http://localhost:5119/Images/products/${product.imgUrl}" alt="${product.name}">
+                                        </div>
+                                        <div class="text">
+                                            <h3>${product.name}</h3>
+                                            <p>${product.description}</p>
+                                            <span class="price">AZN ${product.price}</span>
+                                        </div>
+                                    </a>
+                                    <div class="add-to-cart">
+                                        <img src="http://localhost:5119/Images/icons/cart.png" alt="Add to cart" class="cart-icon" data-product-id="${product.id}" data-product-quantity="1">
+                                    </div>
+                                </div>
+                            `;
+                    productsContainer.appendChild(productElement);
+                });
+
+                // Attach click handler to cart icons
+                document.querySelectorAll('.cart-icon').forEach(icon => {
+                    icon.addEventListener('click', function () {
+                        const productId = this.getAttribute('data-product-id');
+                        const quantity = this.getAttribute('data-product-quantity');
+                        addToCart(productId, quantity);
+                    });
+                });
+            })
+            .catch(error => console.error('Error loading products:', error));
+    }
+
+    function addToCart(productId, quantity) {
+        var currentUrl = window.location.href;
+        $.ajax({
+            url: "/Cart/AddToCart",
+            type: "POST",
+            data: { productId: productId, quantity: quantity },
+            success: function (data) {
+                // Show alert with two buttons
+                Swal.fire({
+                    title: 'Product added to cart!',
+                    icon: 'success',
+                    showCancelButton: true,
+                    confirmButtonText: 'Go to Cart',
+                    cancelButtonText: 'Choose Another Product'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Redirect to cart page
+                        window.location.href = '/Cart/Index';
+                    } else {
+                        // Additional actions when choosing "Choose Another Product"
+                        // For example, load products for the category or other actions
+                        
+                        window.location.href = currentUrl;
+                    }
+                });
+            },
+            error: function (err) {
+                alert("Error adding product to cart.");
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabLinks = document.querySelectorAll('.menu-tab li a');
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent link from navigating
+                const categoryId = this.getAttribute('href').split('-')[1];
+                loadProducts(categoryId);
+            });
+        });
+
+        // Load products for the first tab by default
+        const firstCategory = document.querySelector('.menu-tab li:first-child a');
+        if (firstCategory) {
+            const categoryId = firstCategory.getAttribute('href').split('-')[1];
+            loadProducts(categoryId);
+        }
+    });
+</script>
+
+
+
+
+<!-- Google Map -->
+<div id="flat-map">
+</div><!--flat-map -->
+
+
+

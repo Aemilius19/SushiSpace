@@ -1,0 +1,106 @@
+﻿@using Microsoft.Extensions.Options
+@using SushiSpace.Web.Models.Entites
+
+@model List<OrderProduct>
+
+@{
+    ViewData["Title"] = "Order Summary";
+    float total = 0;
+}
+
+@if (!string.IsNullOrEmpty(TempData["Message"] as string))
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["Message"]
+    </div>
+}
+
+<h2>Order Summary</h2>
+
+<div class="row">
+    <div class="col-lg-6 col-12">
+        <form method="post" asp-action="Index">
+            <div class="checkbox-form">
+                <h3>Billing Details</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="checkout-form-list">
+                            <label>Address <span class="required">*</span></label>
+                            <input name="Address" placeholder="Street address" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="checkout-form-list">
+                            <label>Email Address <span class="required">*</span></label>
+                            <input name="Email" placeholder="" type="email" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="checkout-form-list">
+                            <label>Phone <span class="required">*</span></label>
+                            <input name="Phone" type="text" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <input type="hidden" name="Products[@i].OrderId" value="@Model[i].OrderId" />
+                <input type="hidden" name="Products[@i].ProductId" value="@Model[i].ProductId" />
+                <input type="hidden" name="Products[@i].ProductName" value="@Model[i].ProductName" />
+                <input type="hidden" name="Products[@i].Price" value="@Model[i].Price" />
+                <input type="hidden" name="Products[@i].Quantity" value="@Model[i].Quantity" />
+            }
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="col-lg-6 col-12">
+        <div class="your-order">
+            <h3>Your order</h3>
+            <div class="your-order-table table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="cart-product-name">Product</th>
+                            <th class="cart-product-total">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var product in Model)
+                        {
+                            <tr class="cart_item">
+                                <td class="cart-product-name">
+                                    @product.ProductName<strong class="product-quantity">
+                                        × @product.Quantity
+                                    </strong>
+                                </td>
+                                <td class="cart-product-total">
+                                    <span class="amount">AZN @product.Price</span>
+                                </td>
+                            </tr>
+                            float totalAmount = product.Price;
+                            total += totalAmount; // Accumulate total
+                        }
+                    </tbody>
+                    <tfoot>
+                        <tr class="cart-subtotal">
+                            <th>Cart Subtotal</th>
+                            <td><span class="amount">AZN @total.ToString("0.00")</span></td>
+                        </tr>
+                        <tr class="order-total">
+                            <th>Order Total</th>
+                            <td>
+                                <strong><span class="amount">AZN @total.ToString("0.00")</span></strong>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a asp-action="Index" asp-controller="Cart" class="btn btn-danger">Cancel</a>

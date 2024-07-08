@@ -1,0 +1,14 @@
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\bin\Debug\net8.0\SushiSpace.Core.deps.json
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\bin\Debug\net8.0\SushiSpace.Core.dll
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\bin\Debug\net8.0\SushiSpace.Core.pdb
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\SushiSpace.Core.csproj.AssemblyReference.cache
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\SushiSpace.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\SushiSpace.Core.AssemblyInfoInputs.cache
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\SushiSpace.Core.AssemblyInfo.cs
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\SushiSpace.Core.csproj.CoreCompileInputs.cache
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\SushiSpace.Core.dll
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\refint\SushiSpace.Core.dll
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\SushiSpace.Core.pdb
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\ref\SushiSpace.Core.dll
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\bin\Debug\net8.0\SushiSpace.Core.runtimeconfig.json
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Core\SushiSpace.Core\obj\Debug\net8.0\SushiSpace.Core.genruntimeconfig.cache

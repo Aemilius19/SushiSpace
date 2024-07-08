@@ -1,0 +1,280 @@
+﻿@using SushiSpace.Web.Models.ViewModels
+@using System.Security.Claims
+ @model ProductAndCategoryProductViewModel
+<!-- Page Title -->
+<div class="page-title parallax parallax1 flat_strech">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-heading">
+                    <h1 class="title">Menu Single</h1>
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li> <a href="#">Home </a></li>
+                            <li><a href="#">Our menu</a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.page-title-captions -->
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div>
+
+<!-- Flat row -->
+<div class="flat-row flat-wooc">
+    <div class="container">
+        <div class="row">
+            <div class="woocommerce-page clearfix">
+                <div class="col-md-6">
+                    <div class="flat-product-single-slider">
+                        <div id="flat-product-flexslider">
+                            <ul class="slides">
+                                <li><img width="570" height="570" alt="product-single" src="http://localhost:5119/Images/products/@Model.Product.ImgUrl" class="attachment-themesflat-gallery-product size-themesflat-gallery-product" /></li>
+                                
+                            </ul>
+                        </div>
+                       
+                    </div><!-- /.flat-portfolio-single-slider -->
+                </div><!--/.col-md-6 -->
+
+                <div class="col-md-6">
+                    <div class="entry-summary">
+                        <h2 class="product_title">@Model.Product.Name.ToUpper()</h2>
+
+                        <ul class="favorite">
+                            <li>
+                                <i class="fa fa-heart"></i>
+                                <i class="fa fa-heart"></i>
+                                <i class="fa fa-heart"></i>
+                                <i class="fa fa-heart"></i>
+                                <i class="fa fa-heart"></i>
+                            </li>
+                        </ul>
+
+                        <p class="price">AZN @Model.Product.Price</p>
+
+                        <div class="description">
+                            <p>@Model.Product.Description</p>
+                        </div>
+
+
+
+                        <form class="cart clearfix" method="post">
+                            <div class="quantity">
+                                <input type="number" step="1" min="1" name="quantity" value="1" title="Qty" class="input-text qty text" size="4">
+                            </div>
+                            <input type="hidden" name="add-to-cart" value="@Model.Product.Id">
+
+                            <button type="submit" asp-action="AddToCart" asp-controller="Cart" asp-route-productId="@Model.Product.Id" class="btn btn-primary">Add to cart</button>
+                        </form>
+
+
+                        <ul class="flat-socials">
+                            <li>Share link: </li>
+                            <li class="twitter">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="facebook">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="instagram">
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li class="linkin">
+                                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div><!-- /.entry-summary -->
+                </div><!--/.col-md-8 -->
+            </div><!--/.woocommerce-page -->
+        </div><!--/.row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="flat-accordion">
+
+
+                    <div class="flat-toggle">
+                        <h4 class="toggle-title">COMMENT</h4>
+                        <div class="toggle-content">
+                            @{
+                                var emailConfirmedClaim = User.Claims.FirstOrDefault(c => c.Type == "EmailConfirmed")?.Value;
+                                var emailConfirmed = emailConfirmedClaim != null && bool.Parse(emailConfirmedClaim);
+                            }
+                            @if ((User.IsInRole("User") || User.IsInRole("Admin")) && emailConfirmed)
+                            {
+                                <form asp-action="SendComment" asp-controller="Comment" method="post">
+                                    <div class="form-group">
+                                        <label for="message">Message:</label>
+                                        <textarea id="message" name="text" rows="4" required></textarea>
+                                    </div>
+                                    <input type="hidden" name="ProductId" value="@Model.Product.Id" /> <!-- Replace with actual product ID -->
+                                    <input type="hidden" name="UserName" value="@User.Identity.Name" /> <!-- Replace with actual user ID -->
+                                    <button type="submit">Send</button>
+                                </form>
+                            }
+                            else
+                            {
+                                @if (!User.IsInRole("User") || User.IsInRole("Admin"))
+                                {
+                                    <p>You need to log in to post a comment.</p>
+                                }
+                                else
+                                {
+                                    
+                                    <p>You need to confirm your email to post a comment.</p>
+                                }
+                                
+                            }
+                        </div>
+                    </div><!-- /toggle -->
+
+
+                    <style>
+                        .flat-toggle {
+                            margin-bottom: 20px;
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                            border-radius: 5px;
+                            background-color: #f9f9f9;
+                        }
+
+                        .toggle-title {
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+
+                            .toggle-title span {
+                                font-size: 14px;
+                                color: #666;
+                            }
+
+                        .toggle-content {
+                            margin-top: 10px;
+                        }
+
+                        .comment-container {
+                            border: 1px solid #eee;
+                            border-radius: 5px;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                        }
+
+                        .user-name {
+                            font-weight: bold;
+                            margin-bottom: 5px;
+                        }
+
+                        .comment-text {
+                            color: #333;
+                        }
+                    </style>
+
+                    
+                            @{
+                                var currentUserComments = Model.Comments.Where(c => c.UserName == User.Identity.Name).ToList();
+                                var otherComments = Model.Comments.Where(c => c.UserName != User.Identity.Name).ToList();
+                                var notification = ViewBag.Notification;
+                            }
+
+                            <div class="flat-toggle">
+                                <h4 class="toggle-title">CUSTOMER REVIEWS <span>(@Model.Comments.Count())</span></h4>
+                                <div class="toggle-content">
+                                    @if (!string.IsNullOrEmpty(notification))
+                                    {
+                                        <div class="alert alert-success">
+                                            @notification
+                                        </div>
+                                    }
+
+                                    @* Display current user's comments first *@
+                                    @foreach (var comment in currentUserComments)
+                                    {
+                                        <div class="comment-container">
+                                            <div class="user-name">@comment.UserName</div>
+                                            <div class="comment-text">@comment.Text</div>
+                                            <form asp-action="DeleteComment" asp-controller="Comment" method="post" class="inline-form">
+                                                <input type="hidden" name="id" value="@comment.Id" />
+                                                <input type="hidden" name="productId" value="@Model.Product.Id" />
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    }
+
+                                    @* Display other users' comments *@
+                                    @foreach (var comment in otherComments)
+                                    {
+                                        <div class="comment-container">
+                                            <div class="user-name">@comment.UserName</div>
+                                            <div class="comment-text">@comment.Text</div>
+                                        </div>
+                                    }
+                                </div>
+                            </div><!-- /toggle -->
+
+
+
+                </div><!-- /.flat-accordion -->
+            </div><!--/.col-md-12 -->
+        </div><!--/.row -->
+        <!--  <div class="flat-divider d62px"></div> -->
+    </div><!--/.container -->
+</div><!--/.flat-row -->
+
+<div class="related products-row">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-section style5">
+                    <h1 class="title">Related Products</h1>
+                </div>
+            </div><!--/.col-md-12-->
+        </div>
+
+        <div class="row">
+            <div class="related products clearfix">
+                @foreach (var product in Model.RelatedProducts)
+                {
+                    if (product.Id!=Model.Product.Id)
+                    {
+                        <div class="col-sm-3 col-xs-6 style2">
+                            
+                            <div class="product effect1">
+                                <div class="box-wrap">
+                                    <div class="box-image">
+                                        <a asp-action="Index" asp-controller="Product" asp-route-id="@product.Id">
+                                        <img src="http://localhost:5119/Images/products/@product.ImgUrl" alt="images"></a>
+                                    </div>
+                                    <div class="box-content">
+                                        <h6>@product.Name</h6>
+                                        <ul>
+                                            <li>AZN @product.Price</li>
+                                            <li>
+                                                <i class="fa fa-heart"></i>
+                                                <i class="fa fa-heart"></i>
+                                                <i class="fa fa-heart"></i>
+                                                <i class="fa fa-heart"></i>
+                                                <i class="fa fa-heart"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div><!-- /.related products -->
+        </div><!-- /.row -->
+
+        <div class="flat-divider d47px"></div>
+        <div class="kf_property_line1"></div>
+    </div><!-- /.container -->
+</div>
+
+
+
+<!-- Google Map -->
+<div id="flat-map">
+</div><!--flat-map -->

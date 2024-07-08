@@ -1,0 +1,34 @@
+﻿
+@using SushiSpace.Web.Models.ViewModels
+
+@model ProductViewModel
+
+<h2>Update Product</h2>
+
+<form asp-action="Update" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImgFile"></label>
+        <input asp-for="ImgFile" class="form-control" type="file" />
+        <span asp-validation-for="ImgFile" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="CategoryId" />
+    <input type="hidden" asp-for="Id" /> <!-- Добавляем скрытое поле для ID -->
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
+<a asp-action="Index" asp-controller="Product" class="btn btn-secondary">Back to Products</a>

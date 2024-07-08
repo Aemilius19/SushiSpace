@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>Sushi Space Delivery</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="~/assets/stylesheets/bootstrap.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="~/assets/stylesheets/style.css">
+
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="~/assets/stylesheets/responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/stylesheets/jquery.datetimepicker.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/stylesheets/colors/color1.css" id="colors">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="~/assets/stylesheets/animate.css">
+
+    <!-- Favicon and touch icons  -->
+    <link href="~/assets/icon/apple-touch-icon-48-precomposed.png" rel="apple-touch-icon" sizes="48x48">
+    <link href="~/assets/icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link href="~/assets/icon/favicon.png" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+        <script src="~/assets/javascript/html5shiv.js"></script>
+        <script src="~/assets/javascript/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="">
+    <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h2 class="loader">Loading</h2>
+        </div>
+    </section>
+
+    <div class="box">
+        <header id="header" class="header clearfix">
+            <div class="header-wrap clearfix">
+                <div class="container">
+                    <div class="logo-mobi"><a href="#"> <img src="~/assets/images/logo.png" alt="image"></a></div>
+                    <div class="btn-menu">
+                        <span></span>
+                    </div>
+                    <nav id="mainnav" class="mainnav">
+                        <ul class="menu">
+                            <li class="has-sub">
+                                <a asp-action="Index" asp-controller="Home">Home</a>
+                                <ul class="submenu right-sub-menu ">
+                                    <li><a asp-action="Index" asp-controller="Home">Home Page</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li>
+                                <a asp-action="Index" asp-controller="Menu">Menu</a>
+                                <ul class="submenu">
+                                    <li><a asp-action="Index" asp-controller="Menu">Menu</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="logo">
+                                <a asp-action="Index" asp-controller="About"> <img src="http://localhost:5119/Images/brand/sushispace_logo.png" alt="image" style="max-height: 80px;"></a>
+                            </li>
+                            <li class="has-sub"> <a asp-action="Index" asp-controller="About">About Us</a></li>
+                            <li>
+                                <a href="#">Account</a>
+                                <ul class="submenu">
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        if (User.IsInRole("Admin"))
+                                        {
+                                            <li><a asp-action="Index" asp-controller="Account" asp-route-username=@User.Identity.Name>@User.Identity.Name</a></li>
+                                            <li><a asp-action="Logout" asp-controller="Account">Sign out</a></li>
+                                            <li><a asp-action="Index" asp-controller="Home" asp-area="admin">Admin panel</a></li>
+                                        }
+                                        else
+                                        {
+                                            <li><a asp-action="Index" asp-controller="Account" asp-route-username=@User.Identity.Name>@User.Identity.Name</a></li>
+                                            <li><a asp-action="Logout" asp-controller="Account">Sign out</a></li>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <li><a asp-action="Login" asp-controller="Account">Sign in </a></li>
+                                        <li><a asp-action="Register" asp-controller="Account">Sign Up</a></li>
+                                    }
+                                </ul>
+
+                            </li>
+                            <li> <a asp-action="Index" asp-controller="Cart">Cart</a></li>
+                        </ul><!--/.menu -->
+                    </nav><!--/.mainnav -->
+                </div><!--/.container -->
+            </div><!--/.header-wrap -->
+        </header><!--/.header -->
+        @RenderBody()
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="widget widget_text">
+                            <h3 class="widget-title">About Us</h3>
+                            <div class="textwidget">
+                                <p>Sed ut perspiciatis unde omnis iste <br /> natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                <ul class="footer-info">
+                                    <li class="address">
+                                        203, Envato Labs, Behind Alis Steet,
+                                        Melbourne, Australia.
+                                    </li>
+                                    <li class="email">Email us: company@domain.com</li>
+                                    <li class="phone">Call us: 0084 962 216 601</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /.col-md-3 -->
+
+                   
+
+                    <div class="col-md-3">
+                        <div class="widget widget-link clearfix">
+                            <h3 class="widget-title">User Links </h3>
+
+                            <ul class="links">
+                                <li><a href="#.">About Us</a></li>
+                                <li><a href="#.">Support</a></li>
+                            </ul>
+
+
+                            <div class="social-links">
+                                <a href="#"><i class="fa fa-facebook-square"></i>Facebok</a>
+                                <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+                                
+                            </div>
+                        </div>
+                    </div><!-- /.col-md-3 -->
+
+                    <div class="col-md-3">
+                        <div class="widget widget_instagram">
+                            <h3 class="widget-title">Instagram</h3>
+
+                            <ul class="clearfix">
+                                <li>
+                                    <div class="thumb images-hover flat-hover-images">
+                                        <a href="#">
+                                            <span><img src="~/assets/images/instagram/1.jpg" alt="image"></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb images-hover flat-hover-images">
+                                        <a href="#">
+                                            <span><img src="~/assets/images/instagram/2.jpg" alt="image"></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="thumb images-hover flat-hover-images">
+                                        <a href="#">
+                                            <span><img src="~/assets/images/instagram/3.jpg" alt="image"></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="thumb images-hover flat-hover-images">
+                                        <a href="#">
+                                            <span><img src="~/assets/images/instagram/4.jpg" alt="image"></span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="last">
+                                    <div class="thumb images-hover flat-hover-images">
+                                        <a href="#">
+                                            <span><img src="~/assets/images/instagram/5.jpg" alt="image"></span>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="last">
+                                    <div class="thumb images-hover flat-hover-images">
+                                        <a href="#">
+                                            <span><img src="~/assets/images/instagram/6.jpg" alt="image"></span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <div class="copyright-content">
+                                    Copyright © 2017. Designed by <a href="#" >Emil Abdurahimov</a>. All Rights Reserved
+                                </div>
+                            </div>
+                            <!-- Go Top -->
+                            <a class="go-top-v1"> <i class="fa fa-arrow-up"></i>  &nbsp;Back to Top</a>
+                        </div><!-- /.col-md-12 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.footer-content -->
+        </footer>
+    </div><!--box -->
+    <!-- Javascript -->
+    <script type="text/javascript" src="~/assets/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery.datetimepicker.full.min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery.easing.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/imagesloaded.min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery.cookie.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/parallax.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/smoothscroll.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery-validate.js"></script>
+    <!-- <script type="text/javascript" src="~/assets/javascript/switcher.js"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvV0EE3yFozGhjmUv3BgoyviVdXzCwHlk"></script>
+    <script type="text/javascript" src="~/assets/javascript/gmap3.min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/main.js"></script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="~/assets/javascript/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="~/assets/javascript/slider.js"></script>
+
+</body>
+</html>

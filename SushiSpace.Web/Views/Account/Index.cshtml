@@ -1,0 +1,97 @@
+﻿@using SushiSpace.Web.Models.Entites
+@model User
+<style>
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header, .card-footer {
+        text-align: center;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px 8px 0 0;
+        margin-bottom: 10px;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+        .card-body p {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+    .card-footer {
+        padding-top: 10px;
+    }
+</style>
+
+<div class="container card-container">
+    <div class="card">
+        <div class="card-header">
+            User Information
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Personal Details</h5>
+            <p><strong>First Name:</strong> @Model.FirstName</p>
+            <p><strong>Last Name:</strong> @Model.LastName</p>
+            <p><strong>User Name:</strong> @Model.UserName</p>
+            <p><strong>Email:</strong> @Model.Email</p>
+        </div>
+        <div class="card-footer">
+            <div class="mb-2">
+                <a asp-action="Update" asp-controller="Account" asp-route-id="@Model.Id" class="btn btn-primary">Update</a>
+            </div>
+            <div>
+                <a asp-action="ForgotPassword" asp-controller="Account"  class="btn btn-danger">Forgot Password</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        // Проверяем параметр success в URL и показываем алерт при необходимости
+        var urlParams = new URLSearchParams(window.location.search);
+        var successParam = urlParams.get('success');
+
+        if (successParam === 'true') {
+            showAlert('success', 'Order successfully placed! Our restaurant staff will contact you soon.');
+        }
+    });
+
+    function showAlert(type, message) {
+        var alertHtml = '<div class="alert alert-' + type + ' alert-dismissible fade show" role="alert">' +
+            message +
+            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">' +
+            '<span aria-hidden="true">&times;</span>' +
+            '</button>' +
+            '</div>';
+
+        $('#alerts-container').append(alertHtml);
+    }
+</script>
+
+<div id="alerts-container"></div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.3/dist/umd/popper.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq5dfclFgCkG88N0uCQFnjsd2fFvGGL1pJv4hg9eFQw4k22pGz" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgEPmoF1m/Dk8rWrFghAAK5aHHAq6kN3vGNH2BAQQmNYmB4u6X" crossorigin="anonymous"></script>
+

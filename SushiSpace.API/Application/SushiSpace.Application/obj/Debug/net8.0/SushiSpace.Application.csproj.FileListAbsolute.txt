@@ -1,0 +1,17 @@
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\bin\Debug\net8.0\SushiSpace.Application.deps.json
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\bin\Debug\net8.0\SushiSpace.Application.runtimeconfig.json
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\bin\Debug\net8.0\SushiSpace.Application.dll
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\bin\Debug\net8.0\SushiSpace.Application.pdb
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\bin\Debug\net8.0\SushiSpace.Core.dll
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\bin\Debug\net8.0\SushiSpace.Core.pdb
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\SushiSpace.Application.csproj.AssemblyReference.cache
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\SushiSpace.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\SushiSpace.Application.AssemblyInfoInputs.cache
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\SushiSpace.Application.AssemblyInfo.cs
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\SushiSpace.Application.csproj.CoreCompileInputs.cache
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\SushiSpa.512424AF.Up2Date
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\SushiSpace.Application.dll
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\refint\SushiSpace.Application.dll
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\SushiSpace.Application.pdb
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\SushiSpace.Application.genruntimeconfig.cache
+C:\Users\shiimerryPC\Desktop\SushiSpace\SushiSpace.API\Application\SushiSpace.Application\obj\Debug\net8.0\ref\SushiSpace.Application.dll

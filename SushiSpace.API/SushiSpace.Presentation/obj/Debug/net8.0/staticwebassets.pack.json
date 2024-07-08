@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\brand\\background.jpg",
+      "PackagePath": "staticwebassets\\Images\\brand\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\brand\\sushispace_logo.png",
+      "PackagePath": "staticwebassets\\Images\\brand\\sushispace_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\icons\\cart.png",
+      "PackagePath": "staticwebassets\\Images\\icons\\cart.png"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\06b8634f-019f-489b-9551-78c3bf1c2669.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\06b8634f-019f-489b-9551-78c3bf1c2669.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\24b0d36f-9052-4a88-80bd-f66d2a0799d2.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\24b0d36f-9052-4a88-80bd-f66d2a0799d2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\64ac9f17-141a-4efd-8306-3b1e15f501ee.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\64ac9f17-141a-4efd-8306-3b1e15f501ee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\6a51eb6c-e949-4cbc-9a9b-3d95d1926d4d.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\6a51eb6c-e949-4cbc-9a9b-3d95d1926d4d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\6bbadd30-d535-4edd-99e5-6a3ba8a425ff.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\6bbadd30-d535-4edd-99e5-6a3ba8a425ff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\79db3e2b-740e-4919-b4b6-f5e278a43490.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\79db3e2b-740e-4919-b4b6-f5e278a43490.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\a010c432-d6c3-4c9c-854f-3efd64e593e9.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\a010c432-d6c3-4c9c-854f-3efd64e593e9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\b0cea0e0-268f-4344-9e87-99cec5a9296b.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\b0cea0e0-268f-4344-9e87-99cec5a9296b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\d17eb4ca-ae84-4db2-bebf-ef69e7bb2384.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\d17eb4ca-ae84-4db2-bebf-ef69e7bb2384.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\d691a03f-544e-4653-a10d-d10064aacb3f.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\d691a03f-544e-4653-a10d-d10064aacb3f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.API\\SushiSpace.Presentation\\wwwroot\\Images\\products\\edc77c2f-c808-4621-85e8-ed71a71b8f48.jpg",
+      "PackagePath": "staticwebassets\\Images\\products\\edc77c2f-c808-4621-85e8-ed71a71b8f48.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SushiSpace.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SushiSpace.Presentation.props",
+      "PackagePath": "build\\SushiSpace.Presentation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SushiSpace.Presentation.props",
+      "PackagePath": "buildMultiTargeting\\SushiSpace.Presentation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SushiSpace.Presentation.props",
+      "PackagePath": "buildTransitive\\SushiSpace.Presentation.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,35 @@
+﻿@using SushiSpace.Web.Models.ViewModels
+@model IEnumerable<CategoryViewModel>
+
+<h2>Categories</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New Category</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Id</td>
+                <td>@category.Name</td>
+                <td>
+                    <div class="btn-group" role="group" aria-label="Category Actions">
+                        <a asp-action="Update" asp-route-id="@category.Id" class="btn btn-sm btn-primary">Edit</a>
+                        <form asp-action="Delete" asp-route-id="@category.Id" method="post" onsubmit="return confirm('Are you sure you want to delete this category?');">
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

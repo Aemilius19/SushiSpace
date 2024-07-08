@@ -1,0 +1,445 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\views\\account\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:views\\account\\orders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\models\\viewmodels\\cartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:models\\viewmodels\\cartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\views\\account\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:views\\account\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\views\\order\\confirmpayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:views\\order\\confirmpayment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\models\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:models\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\models\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:models\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\models\\entites\\orderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:models\\entites\\orderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\models\\viewmodels\\confirmpaymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:models\\viewmodels\\confirmpaymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:views\\menu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\models\\viewmodels\\productindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:models\\viewmodels\\productindexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\models\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:models\\entites\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|c:\\users\\shiimerrypc\\desktop\\sushispace\\sushispace.web\\wwwroot\\assets\\stylesheets\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{0FFA76A5-A871-4D5D-84A4-45C7D198DEE4}|SushiSpace.Web.csproj|solutionrelative:wwwroot\\assets\\stylesheets\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderProduct.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\Entites\\OrderProduct.cs",
+              "RelativeDocumentMoniker": "Models\\Entites\\OrderProduct.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\Entites\\OrderProduct.cs",
+              "RelativeToolTip": "Models\\Entites\\OrderProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T22:05:10.528Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAhwM4AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T21:54:16.599Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\DTOs\\OrderDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\OrderDTO.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\DTOs\\OrderDTO.cs",
+              "RelativeToolTip": "Models\\DTOs\\OrderDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T02:49:56.399Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\Index.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "Views\\Order\\Index.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-01T22:40:36.983Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAANcAAAAAAAAAAAAmwOoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T02:53:39.634Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Orders.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Account\\Orders.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Orders.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Account\\Orders.cshtml",
+              "RelativeToolTip": "Views\\Account\\Orders.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T05:18:33.416Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T06:36:22.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Account\\Update.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Update.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Account\\Update.cshtml",
+              "RelativeToolTip": "Views\\Account\\Update.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T11:14:42.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\ViewModels\\CartViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\CartViewModel.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\ViewModels\\CartViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\CartViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T06:29:03.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConfirmPayment.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Order\\ConfirmPayment.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\ConfirmPayment.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Order\\ConfirmPayment.cshtml",
+              "RelativeToolTip": "Views\\Order\\ConfirmPayment.cshtml",
+              "ViewState": "AQIAABMAAAAAAAAAAAAhwCoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T03:21:22.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Account\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Index.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Account\\Index.cshtml",
+              "RelativeToolTip": "Views\\Account\\Index.cshtml",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAiwFsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-04T04:41:59.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAawDgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:17:33.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\ViewModels\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\ViewModels\\ProductViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ProductViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:36:00.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAhwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T22:39:44.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConfirmPaymentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\ViewModels\\ConfirmPaymentViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ConfirmPaymentViewModel.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\ViewModels\\ConfirmPaymentViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ConfirmPaymentViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T03:40:44.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductIndexViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\ViewModels\\ProductIndexViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\ProductIndexViewModel.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\ViewModels\\ProductIndexViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\ProductIndexViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:16:37.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Menu\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Menu\\Index.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Views\\Menu\\Index.cshtml",
+              "RelativeToolTip": "Views\\Menu\\Index.cshtml",
+              "ViewState": "AQIAAKoAAAAAAAAAAAAgwHgAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-02T08:29:35.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "Controllers\\MenuController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T08:30:52.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\Entites\\User.cs",
+              "RelativeDocumentMoniker": "Models\\Entites\\User.cs",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Models\\Entites\\User.cs",
+              "RelativeToolTip": "Models\\Entites\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-30T05:32:30.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Areas\\admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Areas\\admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Areas\\admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T21:47:55.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Areas\\admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Areas\\admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T21:48:34.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Areas\\admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Areas\\admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Areas\\admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwBoAAACYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T21:55:52.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Areas\\admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\Areas\\admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T21:48:24.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-26T21:46:33.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\wwwroot\\assets\\stylesheets\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\assets\\stylesheets\\style.css",
+              "ToolTip": "C:\\Users\\shiimerryPC\\Desktop\\SushiSpace\\SushiSpace.Web\\wwwroot\\assets\\stylesheets\\style.css",
+              "RelativeToolTip": "wwwroot\\assets\\stylesheets\\style.css",
+              "ViewState": "AQIAACwIAAAAAAAAAIBJwE0IAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-26T19:07:49.471Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
